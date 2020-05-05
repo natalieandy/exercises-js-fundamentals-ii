@@ -22,7 +22,6 @@
 
 function runLengthEncode(num) {
   // This is your job. :)
-
   // Remember, if the code is stumping you, take a step back and
   // make sure you can do it by hand.
 }
@@ -30,10 +29,13 @@ function runLengthEncode(num) {
 if (require.main === module) {
   console.log('Running sanity checks for runLengthEncode:');
 
-  console.log(runLengthEncode('WWWWWWAAAAAAWWWWWWAAAAAABBBBBB') === '6W6A6W6A6B');
   console.log(runLengthEncode('A') === '1A');
   console.log(runLengthEncode('AB') === '1A1B');
   console.log(runLengthEncode('Mississippi') === '1M1i2s1i2s1i2p1i');
+
+  console.log(
+    runLengthEncode('WWWWWWAAAAAAWWWWWWAAAAAABBBBBB') === '6W6A6W6A6B'
+  );
 }
 
 module.exports = runLengthEncode;

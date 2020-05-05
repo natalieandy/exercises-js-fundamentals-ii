@@ -20,14 +20,32 @@ function numberToEnglish(num) {
 
 function smallNumberToEnglish(num) {
   let onesInEnglish = [
-    'zero', 'one', 'two', 'three', 'four',
-    'five', 'six', 'seven', 'eight', 'nine',
-    'ten', 'eleven', 'twelve', 'thirteen', 'fourteen',
-    'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen',
+    'zero',
+    'one',
+    'two',
+    'three',
+    'four',
+    'five',
+    'six',
+    'seven',
+    'eight',
+    'nine',
+    'ten',
+    'eleven',
+    'twelve',
+    'thirteen',
+    'fourteen',
+    'fifteen',
+    'sixteen',
+    'seventeen',
+    'eighteen',
+    'nineteen',
   ];
 
   if (num > 19) {
-    throw new Error(`Invalid input: 1-digit or 2-digit input required, received: ${num}`);
+    throw new Error(
+      `Invalid input: 1-digit or 2-digit input required, received: ${num}`
+    );
   }
 
   return onesInEnglish[num];

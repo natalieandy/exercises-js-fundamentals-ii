@@ -12,7 +12,6 @@
 
 function runLengthDecode(num) {
   // This is your job. :)
-
   // Remember, if the code is stumping you, take a step back and
   // make sure you can do it by hand.
 }
@@ -23,12 +22,7 @@ if (require.main === module) {
   console.log('Running sanity checks for runLengthDecode:');
 
   // Add your own test inputs
-  let testInputs = [
-    'A',
-    'AB',
-    'Mississippi',
-    'WWWWWWAAAAAAWWWWWWAAAAAABBBBBB',
-  ];
+  let testInputs = ['A', 'AB', 'Mississippi', 'WWWWWWAAAAAAWWWWWWAAAAAABBBBBB'];
 
   for (let input of testInputs) {
     console.log(runLengthDecode(runLengthEncode(input)) === input);

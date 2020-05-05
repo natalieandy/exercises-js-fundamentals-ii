@@ -18,7 +18,6 @@
 
 function formatSeconds(num) {
   // This is your job. :)
-
   // Remember, if the code is stumping you, take a step back and
   // make sure you can do it by hand.
 }

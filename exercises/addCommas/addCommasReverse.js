@@ -12,7 +12,7 @@ function addCommasReverse(num) {
 function reverse(str) {
   let reversed = '';
 
-  for (let i = str.length; i > 0;i -= 1) {
+  for (let i = str.length; i > 0; i -= 1) {
     reversed += str[i - 1];
   }
 
@@ -39,7 +39,7 @@ function split(str, char) {
   let results = [];
   let group = '';
 
-  for (let i = 0;i < str.length; i += 1) {
+  for (let i = 0; i < str.length; i += 1) {
     if (str[i] === char) {
       results.push(group);
       group = '';
