@@ -43,9 +43,7 @@ function smallNumberToEnglish(num) {
   ];
 
   if (num > 19) {
-    throw new Error(
-      `Invalid input: 1-digit or 2-digit input required, received: ${num}`
-    );
+    throw new Error(`Invalid input: 1-digit or 2-digit input required, received: ${num}`);
   }
 
   return onesInEnglish[num];

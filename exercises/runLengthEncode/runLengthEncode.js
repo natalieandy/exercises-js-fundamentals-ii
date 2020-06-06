@@ -33,9 +33,7 @@ if (require.main === module) {
   console.log(runLengthEncode('AB') === '1A1B');
   console.log(runLengthEncode('Mississippi') === '1M1i2s1i2s1i2p1i');
 
-  console.log(
-    runLengthEncode('WWWWWWAAAAAAWWWWWWAAAAAABBBBBB') === '6W6A6W6A6B'
-  );
+  console.log(runLengthEncode('WWWWWWAAAAAAWWWWWWAAAAAABBBBBB') === '6W6A6W6A6B');
 }
 
 module.exports = runLengthEncode;
