@@ -5,9 +5,9 @@ We're going write a function `addCommas` that takes a non-negative integer as in
 For example:
 
 ```javascript
-addCommas(100);         // => '100'
-addCommas(5491);        // => '5,491'
-addCommas(12345);       // => '12,345'
+addCommas(100);       // => '100'
+addCommas(5491);      // => '5,491'
+addCommas(12345);     // => '12,345'
 addCommas(987654321); // => '987,654,321'
 ```
 
