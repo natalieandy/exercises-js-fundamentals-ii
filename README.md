@@ -37,7 +37,7 @@ For example, converting `12345` to `'twelve thousand three hundred forty five'`.
 
 In [runLengthEncode][dir-run-length-encode], you're asked to implement a simple compression algorithm called *run-length encoding*.
 
-### [Run-Length Decode][dir-run-length-encode]
+### [Run-Length Decode][dir-run-length-decode]
 
 In [runLengthDecode][dir-run-length-decode], you're asked to write a function that decompresses strings compressed using run-length encoding.
 
