@@ -20,10 +20,26 @@
  * @returns {string} A run-length encoded copy of the input string
  */
 
-function runLengthEncode(num) {
+function runLengthEncode(input) {
   // This is your job. :)
   // Remember, if the code is stumping you, take a step back and
   // make sure you can do it by hand.
+  let RLEString = '';
+  let counter = 1;
+
+  for (let i = 0; i <= input.length; i += 1) {
+    let currentLetter = input[i];
+    let nextLetter = input[i + 1];
+    if (nextLetter === currentLetter) {
+      counter += 1;
+      // console.log(counter);
+    } else {
+      RLEString += counter + currentLetter;
+      counter = 1;
+    }
+  }
+  // console.log(RLEString);
+  return RLEString;
 }
 
 if (require.main === module) {
