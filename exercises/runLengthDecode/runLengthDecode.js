@@ -10,10 +10,25 @@
  * @returns {string} The original, uncompressed string
  */
 
-function runLengthDecode(num) {
+function runLengthDecode(input) {
   // This is your job. :)
   // Remember, if the code is stumping you, take a step back and
   // make sure you can do it by hand.
+  let RLDString = '';
+  let characterCount = '';
+
+  for (let i = 0; i <= input.length; i += 1) {
+    if (isNaN(input[i])) {
+      // console.log(isNaN(input[i]));
+      for (let j = 1; j <= parseInt(characterCount); j += 1) {
+        RLDString += input[i];
+      }
+    } else {
+      characterCount += input[i];
+    }
+  }
+  console.log(RLDString);
+  return RLDString;
 }
 
 let runLengthEncode = require('../runLengthEncode/runLengthEncode');
